@@ -149,6 +149,8 @@ class BaseViewController<T: UIViewController>: UIViewController {
     @objc func presentPopOver() {
         let vc = T()
         vc.modalPresentationStyle = .popover
+        vc.popoverPresentationController?.permittedArrowDirections = .up
+        vc.popoverPresentationController?.sourceView = presentPopoverButton
         self.present(vc, animated: true)
     }
 

@@ -10,6 +10,9 @@ import Foundation
 class FirstViewController: BaseViewController<SecondViewController> {
     override func viewDidLoad() {
         super.viewDidLoad()
+        // To show SecondViewController from FirstViewController, try below line
+        // self.definesPresentationContext = true
+        
         view.backgroundColor = .red
     }
 }
